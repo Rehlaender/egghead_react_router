@@ -1,3 +1,4 @@
+//In production depoy use browserHistory in place of hashHistory
 import React from 'react';
 import { Router, Route, Link, hashHistory} from 'react-router';
 
