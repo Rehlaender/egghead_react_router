@@ -1,4 +1,4 @@
-//In production depoy use browserHistory in place of hashHistory
+//In production deploy use browserHistory in place of hashHistory
 import React from 'react';
 import { Router, Route, Link, hashHistory} from 'react-router';
 
@@ -8,9 +8,9 @@ const Contact = () => <div><h1>Contact</h1><Links /></div>;
 
 const Links = () =>
   <nav>
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/contact">Contact</Link>
+    <Link activeStyle={{color: 'pink'}} to="/">Home</Link>
+    <Link activeStyle={{color: 'pink'}} to="/about">About</Link>
+    <Link activeClassName="active" to="/contact">Contact</Link>
   </nav>
 
 class App extends React.Component{
